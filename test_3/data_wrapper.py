@@ -50,6 +50,7 @@ def main():
     final_dataframe = final_dataframe[final_dataframe['reg_ans'].isin(valid_ans)]
 
     #criando os csv
+    #não possível subor o arquivo wrapped por conta de seu tamanho. nem compactado o GitHub aceitou
     final_dataframe.to_csv(r'test_3\data\demonstracoes_contabeis_wrapped.csv', sep=';', index=False)
     cadop_df.to_csv(r'test_3\data\relatorio_cadop.csv', sep=';', index=False)
 
